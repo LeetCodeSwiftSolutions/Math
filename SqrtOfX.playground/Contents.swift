@@ -16,6 +16,5 @@ func mySqrt(_ x: Int) -> Int {
     return pot*pot > x ? pot - 1 : pot
 }
 
-
 /// Pruebas
 mySqrt(1414213562)

@@ -25,7 +25,6 @@ func canMakeArithmeticProgression(_ arr: [Int]) -> Bool {
     return isArithmeticProg
 }
 
-
 /// Pruebas
 canMakeArithmeticProgression([1, 100])
 canMakeArithmeticProgression([3, 5, 1])
