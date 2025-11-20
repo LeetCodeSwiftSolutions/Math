@@ -1,6 +1,8 @@
-/*
- 
- */
+/* VERIFICAR SI LOS ELEMENTOS DE UN ARREGLO PUEDEN FORMAR UNA PROGRESIÓN ARITMÉTICA.
+ Determina si un arreglo de números puede reordenarse de manera que forme una progresión aritmética, es decir, una secuencia donde la diferencia entre cada par de elementos consecutivos sea siempre la misma. Si existe algún reordenamiento posible que cumpla esta condición, se debe devolver true; en caso contrario, false.
+
+ Determine whether an array of numbers can be rearranged to form an arithmetic progression, meaning a sequence in which the difference between every pair of consecutive elements is always the same. If there exists any reordering that meets this condition, return true; otherwise, return false. */
+
 
 /// Solución original
 func canMakeArithmeticProgression(_ arr: [Int]) -> Bool {
