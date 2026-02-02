@@ -18,12 +18,13 @@ func isPalindrome(_ x: Int) -> Bool {
     var num = x
 
     while num > 0 {
-        if (reversedNum*10) + (num%10) < Int.max {
-            reversedNum = (reversedNum*10) + (num%10)
-            num /= 10
-        } else {
+        let units = num%10
+        // Safe overflow verification before reversing the number
+        if reversedNum > (Int(Int32.max) - units) / 10 {
             return false
         }
+        reversedNum = (reversedNum * 10) + units
+        num /= 10
     }
 
     return reversedNum == x
